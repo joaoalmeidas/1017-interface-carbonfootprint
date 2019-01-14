@@ -8,7 +8,7 @@ public class Car implements CarbonFootprint{
 	
 	public Car(int numberOfSeats, int horsepower, String fuel, double kmPerMonth) {
 		
-		if(!fuel.equals("diesel") || !fuel.equals("gasolina") || !fuel.equals("flex") || !fuel.equals("gnv")) {
+		if(!fuel.equals("diesel") && !fuel.equals("gasolina") && !fuel.equals("flex") && !fuel.equals("gnv")) {
 			
 			throw new IllegalArgumentException("combustivel nao válido");
 			
@@ -97,8 +97,8 @@ public class Car implements CarbonFootprint{
 
 	@Override
 	public String toString() {
-		return "Car [numberOfSeats=" + numberOfSeats + ", horsepower=" + horsepower + "hp, fuel=" + fuel + ", kmPerMonth="
-				+ kmPerMonth + "km/month]%nEmissao de CO2e anual: "+ getCarbonFootprint();
+		return String.format("Car [numberOfSeats=" + numberOfSeats + ", horsepower=" + horsepower + "hp, fuel=" + fuel + ", kmPerMonth="
+				+ kmPerMonth + "km/month]%nEmissao de CO2e anual: "+ getCarbonFootprint() +"%n%n");
 	}
 	
 	

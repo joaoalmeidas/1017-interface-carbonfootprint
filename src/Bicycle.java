@@ -50,7 +50,7 @@ public class Bicycle implements CarbonFootprint{
 
 	@Override
 	public String toString() {
-		return "Bicycle [sizeOfWheel=" + sizeOfWheel + ", frame=" + frame + "]%nEmissao de CO2e anual: "+ getCarbonFootprint();
+		return String.format("Bicycle [sizeOfWheel=" + sizeOfWheel + ", frame=" + frame + "]%nEmissao de CO2e anual: "+ getCarbonFootprint() + "%n");
 	}
 	
 	
