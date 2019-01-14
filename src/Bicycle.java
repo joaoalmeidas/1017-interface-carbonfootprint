@@ -1,5 +1,5 @@
 
-public class Bicycle {
+public class Bicycle implements CarbonFootprint{
 	
 	private int sizeOfWheel;
 	private String frame;
@@ -39,5 +39,12 @@ public class Bicycle {
 	
 	public void pedal() {
 		
+	}
+
+
+	@Override
+	public double getCarbonFootprint() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

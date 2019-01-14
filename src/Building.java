@@ -1,5 +1,5 @@
 
-public class Building {
+public class Building implements CarbonFootprint{
 	
 	private double area;
 	private double height;
@@ -45,6 +45,13 @@ public class Building {
 	
 	public void adjustTemperature() {
 		
+	}
+
+
+	@Override
+	public double getCarbonFootprint() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 }

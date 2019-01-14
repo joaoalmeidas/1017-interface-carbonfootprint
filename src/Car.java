@@ -1,5 +1,5 @@
 
-public class Car {
+public class Car implements CarbonFootprint{
 	
 	private int numberOfSeats;
 	private int horsepower;
@@ -46,6 +46,13 @@ public class Car {
 	
 	public void move() {
 		
+	}
+
+
+	@Override
+	public double getCarbonFootprint() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 }
