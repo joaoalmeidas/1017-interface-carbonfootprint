@@ -46,4 +46,12 @@ public class Bicycle implements CarbonFootprint{
 	public double getCarbonFootprint() {
 		return 0;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Bicycle [sizeOfWheel=" + sizeOfWheel + ", frame=" + frame + "]%nEmissao de CO2e anual: "+ getCarbonFootprint();
+	}
+	
+	
 }

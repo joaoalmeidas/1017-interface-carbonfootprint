@@ -80,5 +80,14 @@ public class Building implements CarbonFootprint{
 		// TODO Auto-generated method stub
 		return (0.001626 * getEnergyComsuption()) + (0.02484 * getGasComsuption()) / getHabitants();
 	}
+
+
+	@Override
+	public String toString() {
+		return "Building [area=" + area + ", height=" + height + ", energyComsuption=" + energyComsuption
+				+ ", gasComsuption=" + gasComsuption + ", habitants=" + habitants + "]%nEmissao de CO2e anual: "+ getCarbonFootprint();
+	}
+	
+	
 	
 }
