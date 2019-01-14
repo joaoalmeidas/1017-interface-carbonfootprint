@@ -22,7 +22,30 @@ public class Car {
 		this.numberOfSeats = numberOfSeats;
 		this.horsepower = horsepower;
 	}
+
+
+	public int getNumberOfSeats() {
+		return numberOfSeats;
+	}
+
+
+	public void setNumberOfSeats(int numberOfSeats) {
+		this.numberOfSeats = numberOfSeats;
+	}
+
+
+	public int getHorsepower() {
+		return horsepower;
+	}
+
+
+	public void setHorsepower(int horsepower) {
+		this.horsepower = horsepower;
+	}
 	
 	
+	public void move() {
+		
+	}
 	
 }

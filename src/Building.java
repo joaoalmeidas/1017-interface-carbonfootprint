@@ -22,7 +22,29 @@ public class Building {
 		this.area = area;
 		this.height = height;
 	}
+
+
+	public double getArea() {
+		return area;
+	}
+
+
+	public void setArea(double area) {
+		this.area = area;
+	}
+
+
+	public double getHeight() {
+		return height;
+	}
+
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
 	
-	
+	public void adjustTemperature() {
+		
+	}
 	
 }
