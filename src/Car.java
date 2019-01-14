@@ -97,8 +97,8 @@ public class Car implements CarbonFootprint{
 
 	@Override
 	public String toString() {
-		return "Car [numberOfSeats=" + numberOfSeats + ", horsepower=" + horsepower + ", fuel=" + fuel + ", kmPerMonth="
-				+ kmPerMonth + "]%nEmissao de CO2e anual: "+ getCarbonFootprint();
+		return "Car [numberOfSeats=" + numberOfSeats + ", horsepower=" + horsepower + "hp, fuel=" + fuel + ", kmPerMonth="
+				+ kmPerMonth + "km/month]%nEmissao de CO2e anual: "+ getCarbonFootprint();
 	}
 	
 	

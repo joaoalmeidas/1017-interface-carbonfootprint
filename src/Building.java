@@ -85,7 +85,7 @@ public class Building implements CarbonFootprint{
 	@Override
 	public String toString() {
 		return "Building [area=" + area + ", height=" + height + ", energyComsuption=" + energyComsuption
-				+ ", gasComsuption=" + gasComsuption + ", habitants=" + habitants + "]%nEmissao de CO2e anual: "+ getCarbonFootprint();
+				+ "kWh/month, gasComsuption=" + gasComsuption + "m3/month, habitants=" + habitants + "]%nEmissao de CO2e anual: "+ getCarbonFootprint();
 	}
 	
 	
