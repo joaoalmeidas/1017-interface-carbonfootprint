@@ -3,24 +3,18 @@ public class Building implements CarbonFootprint{
 	
 	private double area;
 	private double height;
+	private double energyComsuption;
+	private double gasComsuption;
+	private int habitants;
 	
-	
-	public Building(double area, double height) {
-		
-		if(area <= 0) {
-			
-			throw new IllegalArgumentException("Área deve ser > 0");
-			
-		}
-		
-		if(height <= 0) {
-			
-			throw new IllegalArgumentException("Altura deve ser > 0");
-			
-		}
-		
+
+	public Building(double area, double height, double energyComsuption, double gasComsuption, int habitants) {
+		super();
 		this.area = area;
 		this.height = height;
+		this.energyComsuption = energyComsuption;
+		this.gasComsuption = gasComsuption;
+		this.habitants = habitants;
 	}
 
 
@@ -43,6 +37,39 @@ public class Building implements CarbonFootprint{
 		this.height = height;
 	}
 	
+	
+	
+	public double getEnergyComsuption() {
+		return energyComsuption;
+	}
+
+
+	public void setEnergyComsuption(double energyComsuption) {
+		this.energyComsuption = energyComsuption;
+	}
+
+
+	public double getGasComsuption() {
+		return gasComsuption;
+	}
+
+
+	public void setGasComsuption(double gasComsuption) {
+		this.gasComsuption = gasComsuption;
+	}
+
+	
+
+	public int getHabitants() {
+		return habitants;
+	}
+
+
+	public void setHabitants(int habitants) {
+		this.habitants = habitants;
+	}
+
+
 	public void adjustTemperature() {
 		
 	}
@@ -51,7 +78,7 @@ public class Building implements CarbonFootprint{
 	@Override
 	public double getCarbonFootprint() {
 		// TODO Auto-generated method stub
-		return 0;
+		return (0.001626 * getEnergyComsuption()) + (0.02484 * getGasComsuption()) / getHabitants();
 	}
 	
 }
